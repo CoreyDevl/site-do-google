@@ -6,29 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+<style>
+*{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    margin: 10px;
+}
+
+.divsHeader{
+    margin: 10px;
+    font-size: 11pt;
+}
+
+#txtheader{
+    margin: 16px 12px 5px 5px;
+    font-size: 11pt; 
+}
+
+#imgheader{
+    margin: 10px;
+    height: 30px;
+    width: 30px;
+}
+
+#emptbx1{
+    width: 200px;
+}
+</style>
 </head>
 <body>
-   <header>
-       <div>
-           caixa vazia
+
+
+   <header style="display: flex; justify-content: flex-end;">
+       <div class="divsHeader" id="emptbx1">
+            
        </div>
-       <div>
-        Gmail
+       
+           <div id="txtheader">
+            Gmail
+           </div>
+           <div id="txtheader">
+               imagens
+           </div>
+        
+       <div class="imgsHeader" >
+           <img src="img/dots.png" alt="" id="imgheader">
        </div>
-       <div>
-           imagens
-       </div>
-       <div>
-           img dots
-       </div>
-       <div>
-           img user
+       <div class="imgsHeader">
+          <img src="img/user.png" alt="" id="imgheader">
        </div>
 
    </header> 
+
+
 <main>
-<div>
-imagem logo
+<div style="display: flex; justify-content: center;">
+<img src="img/googlelogo_color_272x92dp.png" alt="">
 </div>
 <div>
 caixa externa do texto

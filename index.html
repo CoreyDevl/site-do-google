@@ -40,6 +40,10 @@ header{
     width: 200 qpx;
 }
 
+.emptbx2{
+     
+}
+
 #borderbx{    
 
     height: auto;
@@ -77,6 +81,60 @@ width: 430px;
 min-width: 100px;
 }
 
+.botoes{
+    display: block;
+    text-align: center;
+    margin: 20px 20px;
+}
+
+#btn{
+    
+    margin: 2px 2px 2px 2px;
+    border-style: none;
+    border-radius: 4px;
+    padding: 10px 18px 10px 18px ;
+    background-color: #b0dcdd15;
+    font-size: 12pt;
+    font-weight: lighter;
+    color: #000000d7; 
+}
+
+#btn:hover{
+    border-style: solid;
+    border-color: cadetblue;
+}
+
+p{
+    font-weight: lighter;
+    font-size: 11pt;
+    text-align: center;
+}
+
+#footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 10px;
+    background-color: #F2F2F2;
+    font-size: 12pt;
+}
+
+#footer2{
+    width: 100%;
+    padding: 10px;
+    background-color: #F2F2F2;
+    font-size: 12pt;
+    color: #304d4e;
+}
+
+#brasil{
+    width: auto;
+    border-bottom: solid;
+    border-bottom-color: #d1cece96 ;
+    border-width: 1px;
+    color: #304d4e;
+}
+
 </style>
 </head>
 <body>
@@ -111,71 +169,79 @@ min-width: 100px;
 <div>
 <!--caixa abaixo organiza tudo com borda redonda -->
 
-<div id="borderbx" style="display: flex; justify-content:  center; ">
+<div id="motherbox" style="display: flex; justify-content: center;">
+    <div>
+      <!-- vazio para centralizar a caixa de texto-->   
+    </div>
+    <div id="borderbx" style="display: flex; justify-content: center; ">
     
-        <div style="display: flex;">
-            <div>
-                <img src="img/lupa.png" alt="" id="boximg0">
+            <div style="display: flex;">
+                <div>
+                    <img src="img/lupa.png" alt="" id="boximg0">
+                </div>
+                <div>
+                   <input type="text" name="textbox" id="textbox">
+                </div>
+                <div>
+                   <img src="img/keyboard.png" alt="" id="boximg1">
+                </div>
+                <div>
+                    <img src="img/microfone.png" alt="" id="boximg2">
+                </div>
             </div>
-            <div>
-               <input type="text" name="textbox" id="textbox">
-            </div>
-            <div>
-               <img src="img/keyboard.png" alt="" id="boximg1">
-            </div>
-            <div>
-                <img src="img/microfone.png" alt="" id="boximg2">
-            </div>
-            
-     
+    </div>
+    <div>
+         <!-- vazio para centralizar a caixa de texto-->   
     </div>
 </div>
 </div>
-<div>
-    <button>
-        pesquisa Google
+<div class="botoes">
+    <button id="btn">
+        Pesquisa Google
     </button>
-    <button>
+    <button id="btn">
         Estou com sorte
     </button>
 </div>
 <p>
     Disponibilizado pelo Google em: <a href="">English</a>
 </p>
-<div>
-    brasil
-</div>
-<div>
-    caixa externa
-    <div>
-        vazia espaçamento
+<div id="footer">
+    <div id="brasil">
+        Brasil
     </div>
-    <div>
-        sobre
-    </div>
-    <div>
-        publicidade
-    </div>
-    <div>
-        negocios
-    </div>
-    <div>
-        como funciona a pesquisa
-    </div>
-    <div>
-        vazia espaçamento
-    </div>
-    <div>
-        Privacidade
-    </div>
-    <div>
-        Termos
-    </div>
-    <div>
-        configuraçoes
-    </div>
-    <div>
-        vazia espaçamento
+    <div id="footer2" style="display: flex; justify-content:space-between">
+        
+        <div class="emptbx2">
+             
+        </div>
+        <div>
+            sobre
+        </div>
+        <div>
+            publicidade
+        </div>
+        <div>
+            negocios
+        </div>
+        <div>
+            como funciona a pesquisa
+        </div>
+        <div class="emptbx2">
+             
+        </div>
+        <div>
+            Privacidade
+        </div>
+        <div>
+            Termos
+        </div>
+        <div>
+            configuraçoes
+        </div>
+        <div class="emptbx2">
+            
+        </div>
     </div>
 </div>
 </main>

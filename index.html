@@ -37,8 +37,46 @@ header{
 }
 
 #emptbx1{
-    width: 200px;
+    width: 200 qpx;
 }
+
+#borderbx{    
+
+    height: auto;
+    width: auto;
+    min-width: auto;
+    max-width: 600px;
+    margin: 10px;
+    padding: 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 25px 25px; 
+    border-color: rgba(142, 232, 235, 0.356);
+    padding-top: 9px;
+}
+
+#boximg0{
+    height: 20px;
+    margin: 6px 20px 0px 15px;
+}
+
+#boximg1{
+    height: 18px;
+    margin: 4px 15px 0px 15px;
+}
+
+#boximg2{
+    height: 27px;
+    width: 20px;
+    margin: 0px 15px 0px 15px;
+}
+
+#textbox{
+border-style: none;
+width: 430px;
+min-width: 100px;
+}
+
 </style>
 </head>
 <body>
@@ -71,21 +109,25 @@ header{
 <img src="img/googlelogo_color_272x92dp.png" alt="">
 </div>
 <div>
-caixa externa do texto
-<div>caixa de organizar tudo com borda redonda
-    <div>
-        <div>
-            img lupa
-        </div>
-        <div>
-            input de texto
-        </div>
-        <div>
-            img keyboard
-        </div>
-        <div>
-            img microfone
-        </div>
+<!--caixa abaixo organiza tudo com borda redonda -->
+
+<div id="borderbx" style="display: flex; justify-content:  center; ">
+    
+        <div style="display: flex;">
+            <div>
+                <img src="img/lupa.png" alt="" id="boximg0">
+            </div>
+            <div>
+               <input type="text" name="textbox" id="textbox">
+            </div>
+            <div>
+               <img src="img/keyboard.png" alt="" id="boximg1">
+            </div>
+            <div>
+                <img src="img/microfone.png" alt="" id="boximg2">
+            </div>
+            
+     
     </div>
 </div>
 </div>

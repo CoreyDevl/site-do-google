@@ -8,8 +8,8 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 <style>
 *{
-    max-width: 100%;
-    max-height: 100%;
+    overflow-x: hidden;
+ 
 }
 
 body {
@@ -17,7 +17,7 @@ body {
 }
 
 header{
-    margin: 10px;
+    margin: 0px 6px;
 }
 
 .divsHeader{
@@ -26,29 +26,57 @@ header{
 }
 
 #txtheader{
-    margin: 16px 12px 5px 5px;
-    font-size: 11pt; 
+    margin: 15px 12px 5px 5px;
+    font-size: 9.6pt; 
 }
 
-#imgheader{
-    margin: 10px;
-    height: 30px;
-    width: 30px;
+#txtheader:hover{
+    text-decoration: underline;
+}
+
+#imgheader1{
+    margin: 11px 7px 6px 16px;
+    height: 23px;
+    width: 23px;
+}
+
+#imgheader1:hover{
+    box-shadow: 0px 0px 2px rgba(137, 43, 226, 0.452);
+}
+
+#imgheader2{
+    margin: 5px 4px 10px 10px;
+    height: 35px;
+    width: 35px;
+}
+
+#imgheader2:hover{
+    box-shadow: 0px 0px 2px rgba(137, 43, 226, 0.452);
+}
+
+#logo{
+    position: absolute;
+    margin-top: -4px;
+}
+
+#motherbox{
+    margin: 100px 10px 10px 10px;
 }
 
 #emptbx1{
-    width: 200 qpx;
+    width: 200px;
+     
 }
 
 .emptbx2{
-     
+   width: 95px;  
 }
 
 #borderbx{    
 
     height: auto;
     width: auto;
-    min-width: auto;
+    min-width: 1152;
     max-width: 600px;
     margin: 10px;
     padding: 4px;
@@ -56,23 +84,27 @@ header{
     border-style: solid;
     border-radius: 25px 25px; 
     border-color: rgba(142, 232, 235, 0.356);
-    padding-top: 9px;
+    padding-top: 15px;
+}
+
+#borderbx:hover{
+    box-shadow: 0px 0px 8px #892be227;
 }
 
 #boximg0{
-    height: 20px;
-    margin: 6px 20px 0px 15px;
+    height: 17px;
+    margin: 3px 20px 0px 15px;
 }
 
 #boximg1{
-    height: 18px;
+    height: 15px;
     margin: 4px 15px 0px 15px;
 }
 
 #boximg2{
-    height: 27px;
-    width: 20px;
-    margin: 0px 15px 0px 15px;
+    height: 24px;
+    width: 16px;
+    margin: 0px 16px -2px 6px;
 }
 
 #textbox{
@@ -84,7 +116,7 @@ min-width: 100px;
 .botoes{
     display: block;
     text-align: center;
-    margin: 20px 20px;
+    margin: 10px 20px;
 }
 
 #btn{
@@ -94,45 +126,57 @@ min-width: 100px;
     border-radius: 4px;
     padding: 10px 18px 10px 18px ;
     background-color: #b0dcdd15;
-    font-size: 12pt;
+    font-size: 10pt;
     font-weight: lighter;
     color: #000000d7; 
 }
 
 #btn:hover{
-    border-style: solid;
-    border-color: cadetblue;
+    box-shadow: 0px 0px 2px #b072e9f1;
 }
 
 p{
-    font-weight: lighter;
-    font-size: 11pt;
+    font-weight: 100;
+    font-size: 13.5pt;
     text-align: center;
+    color: rgba(0, 0, 0, 0.829);
 }
 
 #footer{
+    margin: 0px 2px 2px -19px;
     position: absolute;
     bottom: 0px;
     width: 100%;
     padding: 10px;
     background-color: #F2F2F2;
-    font-size: 12pt;
+    font-size: 11pt;
+    
 }
 
 #footer2{
     width: 100%;
-    padding: 10px;
     background-color: #F2F2F2;
-    font-size: 12pt;
-    color: #304d4e;
+    font-size: 11pt;
+    color: #1f6063b2;
+    border-top: solid;
+    border-top-color: #d1cece96 ;
+    border-width: 1px;
+    padding: 12px 10px 3px 10px;
+   
 }
 
 #brasil{
-    width: auto;
-    border-bottom: solid;
-    border-bottom-color: #d1cece96 ;
+    width: 100%;
+    background-color: #F2F2F2;
+    font-size: 12pt;
+    color: #1f6063b2;
     border-width: 1px;
-    color: #304d4e;
+    
+    margin: 8px 10px 13px 23px;
+}
+
+.footertxt:hover{
+    text-decoration: underline;
 }
 
 </style>
@@ -149,14 +193,14 @@ p{
             Gmail
            </div>
            <div id="txtheader">
-               imagens
+               Imagens
            </div>
         
        <div class="imgsHeader" >
-           <img src="img/dots.png" alt="" id="imgheader">
+           <img src="img/dots.png" alt="" id="imgheader1">
        </div>
        <div class="imgsHeader">
-          <img src="img/user.png" alt="" id="imgheader">
+          <img src="img/user.png" alt="" id="imgheader2">
        </div>
 
    </header> 
@@ -164,7 +208,7 @@ p{
 
 <main>
 <div style="display: flex; justify-content: center;">
-<img src="img/googlelogo_color_272x92dp.png" alt="">
+<img id="logo" src="img/googlelogo_color_272x92dp.png" alt="">
 </div>
 <div>
 <!--caixa abaixo organiza tudo com borda redonda -->
@@ -210,34 +254,34 @@ p{
     <div id="brasil">
         Brasil
     </div>
-    <div id="footer2" style="display: flex; justify-content:space-between">
+    <div id="footer2" style="display: flex; justify-content:  space-around">
         
         <div class="emptbx2">
              
         </div>
-        <div>
-            sobre
+        <div class="footertxt">
+            Sobre
         </div>
-        <div>
-            publicidade
+        <div class="footertxt">
+            Publicidade
         </div>
-        <div>
-            negocios
+        <div class="footertxt">
+            Negócios
         </div>
-        <div>
-            como funciona a pesquisa
+        <div class="footertxt">
+            Como funciona a Pesquisa
         </div>
         <div class="emptbx2">
              
         </div>
-        <div>
+        <div class="footertxt">
             Privacidade
         </div>
-        <div>
+        <div class="footertxt">
             Termos
         </div>
-        <div>
-            configuraçoes
+        <div class="footertxt">
+            Configurações
         </div>
         <div class="emptbx2">
             
